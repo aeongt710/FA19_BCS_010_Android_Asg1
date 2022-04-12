@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRecordFragment"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="-41dp">
+
+    <TextView
+        android:id="@+id/Fragment_Add_TV_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/Fragment_Add_ET_Name"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_ET_Name" />
+
+    <EditText
+        android:id="@+id/Fragment_Add_ET_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Fragment_Add_TV_Age"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Fragment_Add_TV_Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/age"
+        app:layout_constraintBottom_toTopOf="@+id/Fragment_Add_ET_Age"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_ET_Name" />
+
+    <EditText
+        android:id="@+id/Fragment_Add_ET_Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/Fragment_Add_TV_Address"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_TV_Age" />
+
+    <TextView
+        android:id="@+id/Fragment_Add_TV_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/address"
+        app:layout_constraintBottom_toTopOf="@+id/Fragment_Add_ET_Address"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_ET_Age" />
+
+    <EditText
+        android:id="@+id/Fragment_Add_ET_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="317dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Fragment_Add_BTN_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/search_btn"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_ET_Address"
+        app:layout_constraintTop_toBottomOf="@+id/Fragment_Add_ET_Address" />
+</androidx.constraintlayout.widget.ConstraintLayout>
