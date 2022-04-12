@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="42dp"
         android:layout_marginTop="42dp"
-        android:text="@string/search_btn"
+        android:text="@string/add"
         app:layout_constraintStart_toStartOf="@+id/Fragment_Add_ET_Address"
         app:layout_constraintTop_toBottomOf="@+id/Fragment_Add_ET_Address" />
 </androidx.constraintlayout.widget.ConstraintLayout>
