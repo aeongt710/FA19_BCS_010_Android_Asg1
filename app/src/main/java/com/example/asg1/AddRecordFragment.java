@@ -89,7 +89,7 @@ public class AddRecordFragment extends Fragment {
         btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(et_name.getText().toString()==null||et_age.getText().toString()==null||et_address.getText().toString()==null)
+                if(et_name.getText().toString().equals("")||et_age.getText().toString().equals("")||et_address.getText().toString().equals(""))
                 {
                     Toast.makeText(getActivity(), "Invalid Details", Toast.LENGTH_SHORT).show();
                 }
