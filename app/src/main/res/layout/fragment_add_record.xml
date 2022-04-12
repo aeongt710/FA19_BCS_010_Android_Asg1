@@ -12,7 +12,7 @@
         android:id="@+id/Fragment_Add_TV_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="23dp"
         android:text="@string/name"
         app:layout_constraintBottom_toTopOf="@+id/Fragment_Add_ET_Name"
         app:layout_constraintStart_toStartOf="@+id/Fragment_Add_ET_Name" />
@@ -21,12 +21,12 @@
         android:id="@+id/Fragment_Add_ET_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="46dp"
         android:layout_marginBottom="36dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/Fragment_Add_TV_Age"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/Fragment_Add_ET_Email"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_TV_Email" />
 
     <TextView
         android:id="@+id/Fragment_Add_TV_Age"
@@ -43,40 +43,62 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginTop="238dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/Fragment_Add_TV_Address"
-        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_TV_Age" />
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_TV_Age"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Fragment_Add_TV_Address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginTop="38dp"
         android:text="@string/address"
-        app:layout_constraintBottom_toTopOf="@+id/Fragment_Add_ET_Address"
-        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_ET_Age" />
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_ET_Age"
+        app:layout_constraintTop_toBottomOf="@+id/Fragment_Add_ET_Age" />
 
     <EditText
         android:id="@+id/Fragment_Add_ET_Address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="317dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="33dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Fragment_Add_TV_Email"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/Fragment_Add_BTN_Save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="15dp"
         android:text="@string/add"
-        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_ET_Address"
-        app:layout_constraintTop_toBottomOf="@+id/Fragment_Add_ET_Address" />
+        app:layout_constraintEnd_toEndOf="@+id/Fragment_Add_ET_Email"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_ET_Email"
+        app:layout_constraintTop_toBottomOf="@+id/Fragment_Add_ET_Email" />
+
+    <TextView
+        android:id="@+id/Fragment_Add_TV_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/Fragment_Add_ET_Email"
+        app:layout_constraintStart_toStartOf="@+id/Fragment_Add_ET_Email" />
+
+    <EditText
+        android:id="@+id/Fragment_Add_ET_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="183dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Fragment_Add_TV_Address" />
 </androidx.constraintlayout.widget.ConstraintLayout>

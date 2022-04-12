@@ -4,11 +4,13 @@ public class Person {
     private String Name;
     private int Age;
     private String Address;
+    private String Email;
 
-    public Person(String name, int age, String address) {
+    public Person(String name, int age, String address,String email) {
         Name = name;
         Age = age;
         Address = address;
+        Email = email;
     }
 
     public String getName() {
@@ -25,10 +27,11 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person {" +
-                "Name='" + Name  +
+        return "Person{" +
+                "Name='" + Name +
                 ", Age=" + Age +
                 ", Address='" + Address +
+                ", email='" + Email  +
                 " }";
     }
 }

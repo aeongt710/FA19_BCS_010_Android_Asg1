@@ -27,7 +27,7 @@ public class AddRecordFragment extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     private Button btn_save;
-    private EditText et_name,et_age,et_address;
+    private EditText et_name,et_age,et_address,et_email;
     private SharedViewModel viewModel;
 
 
@@ -86,15 +86,16 @@ public class AddRecordFragment extends Fragment {
         et_name=view.findViewById(R.id.Fragment_Add_ET_Name);
         et_age=view.findViewById(R.id.Fragment_Add_ET_Age);
         et_address=view.findViewById(R.id.Fragment_Add_ET_Address);
+        et_email=view.findViewById(R.id.Fragment_Add_ET_Email);
         btn_save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(et_name.getText().toString().equals("")||et_age.getText().toString().equals("")||et_address.getText().toString().equals(""))
+                if(et_name.getText().toString().equals("")||et_age.getText().toString().equals("")||et_address.getText().toString().equals("")||et_email.getText().toString().equals(""))
                 {
                     Toast.makeText(getActivity(), "Invalid Details", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Person p=new Person(et_name.getText().toString(),Integer.parseInt(et_age.getText().toString()),et_address.getText().toString());
+                    Person p=new Person(et_name.getText().toString(),Integer.parseInt(et_age.getText().toString()),et_address.getText().toString(),et_email.getText().toString());
                     Toast.makeText(getActivity(), p.toString(), Toast.LENGTH_SHORT).show();
                     viewModel.addPerson(p);
                 }
